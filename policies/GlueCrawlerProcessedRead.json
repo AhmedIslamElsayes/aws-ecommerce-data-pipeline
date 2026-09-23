@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "GlueCrawlerReadProcessed",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::ahmed-data-bucket-2026-new/processed/ecommerce/*"
+        },
+        {
+            "Sid": "GlueCrawlerListBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Resource": "arn:aws:s3:::ahmed-data-bucket-2026-new"
+        }
+    ]
+}
